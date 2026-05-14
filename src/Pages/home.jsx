@@ -7,6 +7,7 @@ import SkillSection from "../components/SkillSection";
 import ProjectSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import CircularGalleryDemo from "../components/certifSection";
 
 const home = () => {
   return (
@@ -23,6 +24,7 @@ const home = () => {
         <AboutSection />
         <SkillSection />
         <ProjectSection />
+        <CircularGalleryDemo />
         <ContactSection />
       </main>
       {/* footer */}

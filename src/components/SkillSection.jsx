@@ -3,25 +3,31 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "Flutter", level: 90, category: "frontend" },
+  { name: "Dart", level: 85, category: "frontend" },
+  { name: "React", level: 85, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
+  { name: "Framer Motion", level: 75, category: "frontend" },
 
   // Backend
   { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "MySQL", level: 60, category: "backend" },
+  { name: "Express.js", level: 80, category: "backend" },
+  { name: "Python Flask", level: 70, category: "backend" },
+  { name: "Google Gemini AI", level: 70, category: "backend" },
+
+  // Database & Services
+  { name: "Supabase", level: 75, category: "database" },
+  { name: "MongoDB", level: 70, category: "database" },
+  { name: "PostgreSQL", level: 70, category: "database" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", level: 85, category: "tools" },
+  { name: "Vite", level: 80, category: "tools" },
+  { name: "Figma", level: 75, category: "tools" },
+  { name: "VS Code", level: 90, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "database", "tools"];
 
 const SkillSection = () => {
   const [ActiveSkill, setActiveSkill] = useState("all");

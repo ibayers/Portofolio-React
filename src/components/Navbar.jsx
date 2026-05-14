@@ -6,7 +6,9 @@ const navItems = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experiences" },
   { name: "Projects", href: "#projects" },
+  { name: "Certificates", href: "#certificates" },
   { name: "Contact", href: "#contact" },
 ];
 const Navbar = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const scroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", scroll);
     return () => window.removeEventListener("scroll", scroll);
