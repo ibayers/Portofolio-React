@@ -93,7 +93,7 @@ const ProjectDetail = () => {
                   <img
                     src={shot}
                     alt={`${project.title} screenshot ${i + 1}`}
-                    className={`${isPortrait ? "h-[250px]" : "h-[250px]"} w-auto object-contain transition duration-300 hover:scale-105`}
+                    className="h-[150px] md:h-[250px] w-auto object-contain transition duration-300 hover:scale-105"
                   />
                 </div>
               ))}

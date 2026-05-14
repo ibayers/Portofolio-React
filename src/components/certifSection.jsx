@@ -28,7 +28,7 @@ const galleryItems = [
 
 export default function CircularGalleryDemo() {
   return (
-    <div className="relative h-[600px] w-full rounded-lg">
+    <div className="hidden md:block relative h-[350px] md:h-[600px] w-full rounded-lg">
       <CircularGallery
         items={galleryItems}
         bend={3}

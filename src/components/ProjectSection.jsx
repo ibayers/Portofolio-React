@@ -24,13 +24,13 @@ const FeaturedProjectCard = ({ project }) => {
       >
         <Link to={`/projects/${project.slug}`} className="block group">
           <div className="rounded-xl bg-card border border-border transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/[0.05]">
-            <div className="flex gap-10 p-2 bg-muted/20 rounded-t-xl items-center justify-center">
+            <div className="flex gap-3 p-2 bg-muted/20 rounded-t-xl items-center justify-center overflow-x-auto">
               {screenshots.slice(0, 5).map((shot, i) => (
                 <img
                   key={i}
                   src={shot}
                   alt={`${project.title} screenshot ${i + 1}`}
-                  className="h-[300px] w-auto object-contain rounded-md"
+                  className="h-[150px] md:h-[300px] w-auto object-contain rounded-md shrink-0"
                 />
               ))}
             </div>
@@ -87,14 +87,14 @@ const FeaturedProjectCard = ({ project }) => {
       viewport={{ once: true }}
     >
       <Link to={`/projects/${project.slug}`} className="block group">
-        <div className="rounded-xl bg-card border border-border transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/[0.05] w-fit mx-auto">
-          <div className="flex gap-3 p-3 bg-muted/20 rounded-t-xl items-center justify-center">
+        <div className="rounded-xl bg-card border border-border transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/[0.05] w-full max-w-3xl mx-auto">
+          <div className="flex gap-3 p-3 bg-muted/20 rounded-t-xl items-center justify-center overflow-x-auto">
             {landscapeScreenshots.slice(0, 3).map((shot, i) => (
               <img
                 key={i}
                 src={shot}
                 alt={`${project.title} screenshot ${i + 1}`}
-                className="h-[250px] w-auto object-contain rounded-md"
+                className="h-[120px] md:h-[250px] w-auto max-w-[45%] md:max-w-none object-contain rounded-md shrink-0"
               />
             ))}
           </div>

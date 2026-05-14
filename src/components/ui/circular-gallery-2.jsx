@@ -312,9 +312,10 @@ class Media {
         ];
       }
     }
-    this.scale = this.screen.height / 1200;
+    this.scale = this.screen.height / 1500;
+    const planeBase = this.screen.width < 768 ? 350 : 600;
     this.plane.scale.y =
-      (this.viewport.height * (600 * this.scale)) / this.screen.height;
+      (this.viewport.height * (planeBase * this.scale)) / this.screen.height;
     this.plane.scale.x = this.plane.scale.y * (16 / 9);
     this.program.uniforms.uPlaneSizes.value = [
       this.plane.scale.x,

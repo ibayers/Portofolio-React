@@ -36,8 +36,9 @@ const ContactSection = () => {
           Get In <span className="text-primary">Touch</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-5xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad ut
-          adipisci ab molestias veniam placeat quibusdam assumenda quo sed
+          Jangan ragu untuk menghubungi saya jika ada pertanyaan, ingin
+          berkolaborasi, atau sekadar menyapa. Saya selalu terbuka untuk
+          peluang baru.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

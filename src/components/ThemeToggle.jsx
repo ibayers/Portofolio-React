@@ -7,12 +7,13 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     const storedthem = localStorage.getItem("theme");
-    if (storedthem === "dark") {
-      setisdarkmode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      localStorage.setItem("theme", "light");
+    if (storedthem === "light") {
       setisdarkmode(false);
+      document.documentElement.classList.remove("dark");
+    } else {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+      setisdarkmode(true);
     }
   }, []);
 

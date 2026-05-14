@@ -14,14 +14,14 @@ const AboutSection = () => {
               Passion In Front End & Artificial Intelligence
             </h3>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad
-              ut adipisci ab molestias veniam placeat quibusdam assumenda quo
-              sed, eveniet incidunt praesentium possimus
+              Saya adalah seorang Front End Developer dan AI Engineer yang
+              bersemangat dalam membangun pengalaman digital yang modern,
+              responsif, dan berpusat pada pengguna.
             </p>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad
-              ut adipisci ab molestias veniam placeat quibusdam assumenda quo
-              sed, eveniet incidunt praesentium possimus
+              Dengan pengalaman dalam React, Next.js, dan teknologi AI, saya
+              berfokus pada menciptakan solusi kreatif yang menggabungkan desain
+              antarmuka yang menarik dengan kecerdasan buatan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="cosmic-button">
@@ -44,7 +44,8 @@ const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
                   <p className="text-muted-foreground">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Membangun website modern dan responsif menggunakan React,
+                    Next.js, dan Tailwind CSS.
                   </p>
                 </div>
               </div>
@@ -56,10 +57,11 @@ const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Articficial and Intelligence
+                    Artificial Intelligence
                   </h4>
                   <p className="text-muted-foreground">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Mengembangkan solusi AI dan machine learning untuk
+                    mengoptimalkan proses bisnis.
                   </p>
                 </div>
               </div>
@@ -70,9 +72,10 @@ const AboutSection = () => {
                   <Briefcase className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Work Experience </h4>
+                  <h4 className="font-semibold text-lg">Work Experience</h4>
                   <p className="text-muted-foreground">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Pengalaman kerja di bidang software development dan
+                    konsultasi teknologi.
                   </p>
                 </div>
               </div>
