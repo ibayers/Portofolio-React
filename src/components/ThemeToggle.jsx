@@ -6,12 +6,12 @@ const ThemeToggle = () => {
   const [isdarkmode, setisdarkmode] = useState(false);
 
   useEffect(() => {
-    const storedthem = localStorage.getItem("theme");
+    const storedthem = localStorage.getItem("theme-v2");
     if (storedthem === "light") {
       setisdarkmode(false);
       document.documentElement.classList.remove("dark");
     } else {
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme-v2", "dark");
       document.documentElement.classList.add("dark");
       setisdarkmode(true);
     }
@@ -20,11 +20,11 @@ const ThemeToggle = () => {
   const toogletheme = () => {
     if (isdarkmode) {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme-v2", "light");
       setisdarkmode(false);
     } else {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme-v2", "dark");
       setisdarkmode(true);
     }
   };
